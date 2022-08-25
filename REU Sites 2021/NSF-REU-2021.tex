@@ -1,3 +1,4 @@
+
 %Fred, Yuhan NSF REU Sites Aug 2021
 \documentclass[11pt]{NSFamsart}
 \usepackage{latexsym,amsfonts,amsmath,amssymb,amsthm,epsfig,extdash,multirow}
@@ -31,8 +32,8 @@
 \textwidth 6.44in
 \setlength{\oddsidemargin}{0in}
 \setlength{\evensidemargin}{0in}
-\thispagestyle{empty} \pagestyle{empty} %to eliminate page numbers for upload
-%\thispagestyle{plain} \pagestyle{plain} %to add back page numbers
+%\thispagestyle{empty} \pagestyle{empty} %to eliminate page numbers for upload
+\thispagestyle{plain} \pagestyle{plain} %to add back page numbers
 %%%%%% Squeeze the space %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %\renewcommand{\baselinestretch}{0.97}
 %%%%%%Squeeze the space %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
@@ -69,9 +70,9 @@
 
 \newcommand{\FH}{\hyperlink{FHlink}{FH}\xspace}
 \newcommand{\MH}{\hyperlink{MHlink}{MH}\xspace}
-\newcommand{\SA}{\hyperlink{SAlink}{SA}\xspace}
+\newcommand{\GP}{\hyperlink{GPlink}{GP}\xspace}
 \newcommand{\SM}{\hyperlink{SMlink}{SM}\xspace}
-\newcommand{\SCTC}{\hyperlink{SCTClink}{SCTC}\xspace}
+\newcommand{\SCTC}{\hyperlink{SCTClink}{SCC}\xspace}
 \newcommand{\AO}{\hyperlink{AOlink}{AO}\xspace}
 \newcommand{\MM}{\hyperlink{MMlink}{MM}\xspace}
 \newcommand{\TS}{\hyperlink{TSlink}{TS}\xspace}
@@ -93,6 +94,11 @@
 \newcommand{\SL}{\hyperlink{SLlink}{SL}\xspace}
 \newcommand{\QOIs}{\hyperlink{QOIlink}{QOIs}\xspace}
 \newcommand{\POIs}{\hyperlink{POIlink}{POIs}\xspace}
+\newcommand{\MAA}{\hyperlink{MAAlink}{MAA}\xspace}
+\newcommand{\JMM}{\hyperlink{JMMlink}{JMM}\xspace}
+\newcommand{\SIAM}{\hyperlink{SIAMlink}{SIAM}\xspace}
+\newcommand{\AWM}{\hyperlink{AWMlink}{AWM}\xspace}
+\newcommand{\NAM}{\hyperlink{NAMlink}{NAM}\xspace}
 \DeclareMathOperator{\QOI}{QOI} %Quantity of Interest
 \DeclareMathOperator{\POI}{POI} %Parameter of Interest
 \newcommand{\MSIs}{\hyperlink{MSIlink}{MSIs}\xspace}
@@ -134,7 +140,7 @@
 \DeclareMathOperator{\reg}{reg}
 \DeclareMathOperator{\CV}{CV}
 \DeclareMathOperator{\size}{wd}
-\DeclareMathOperator{\GP}{\mathcal{G} \! \mathcal{P}}
+%\DeclareMathOperator{\GP}{\mathcal{G} \! \mathcal{P}}
 \DeclareMathOperator{\erf}{erf}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator*{\argmin}{arg\,min}
@@ -412,7 +418,7 @@ computational(?) data science or computation and data science
 
 SURE will engage undergraduate students---\emph{especially those from underrepresented groups and academic institutions where research opportunities are limited}---in innovative computational mathematics and machine learning research.  SURE students will participate in active research groups.  They will learn to work independently and creatively. They will acquire both ``hard'' academic skills and ``soft'' communication and teamwork skills.  SURE students will be prepared and inspired to pursue graduate study in mathematics, statistics, or a related field in preparation for research careers in academia or industry.
 
-SURE will involve \emph{ten undergraduate students, five faculty mentors, and two graduate students} each Summer for three years at the Illinois Institute of Technology (Illinois Tech).  SURE participants will engage in a \emph{ten-week program from May to July}, working in groups of three or fewer based on the students’ preference, under the supervision of faculty mentors and with the assistance of graduate students. Faculty mentors will continue to advise SURE participants during the following academic year to write up their results for publication, and to support them as they transition into graduate schools. In addition, SURE will provide financial support for students to present their research results at professional conferences and workshops.
+SURE will involve \emph{ten undergraduate students, five faculty mentors, and two graduate students} each summer for three years at the Illinois Institute of Technology (Illinois Tech).  SURE participants will engage in a \emph{ten-week program from May to July}, working in groups of three or fewer based on the students’ preference, under the supervision of faculty mentors and with the assistance of graduate students. Faculty mentors will continue to advise SURE participants during the following academic year to write up their results for publication, and to support them as they transition into graduate schools. In addition, SURE will provide financial support for students to present their research results at professional conferences and workshops.
 (SURE will preferably run on-site, but be prepared to go virtual or hybrid if public health conditions require so.)
 
 \subsection{Objectives} The acronym SURE plays a dual role in highlighting our objectives.
@@ -484,10 +490,7 @@ and \FH will serve as faculty mentors along with three senior Illinois Tech pers
 mentors are from the Department of Applied Mathematics in the College of Computing at
 Illinois Tech.
 
-\subsection{A Pilot  Program in 2021 Summer}
 
-A \emph{seven-week}, internally funded pilot program was hosted remotely in the summer of 2021, which involved \emph{six faculty mentors and seven undergraduate students}. This program was a collaboration between the departments of applied mathematics and computer science. Each student received a \$500 weekly stipend. \YD, the pilot program coordinator, handled the selection of students and mentors, coordination of hybrid gatherings, social activities, and final presentations. \FH, \LK, and \SL served as mentors. \emph{Two of the undergraduates were racial minorities, four were female, one was a sexual minority, and three were first-generation college students.} All students provided very positive feedback about the program.
-The detailed program information and comments from the participants can be found in \cite{SUREWeb}.
 
 \subsection{Timetable}
 \emph{Recruitment (from Fall to Spring):} Efforts will be made to increase the visibility of the program to undergraduate students, especially those from traditionally underrepresented groups and research limited institutions. Applications received before the 3rd Monday of January will be given full consideration, but applications will be accepted until all slots are filled. Selection of the participants via potential Skype/Zoom interviews will begin in February. Decisions and offers will be made by the end of February. Students will be asked to respond to the offer within two weeks of notification, but no earlier than the March 8 common deadline for mathematics REUs. If any student declines, an alternate offer will be made to another applicant. 
@@ -498,17 +501,11 @@ The detailed
 information is in Section \ref{sec:SURESchedule}.
 %On Day 1, the research projects will be presented to SURE participants along with physical and biological background and an overview of some of the mathematical, statistical, or computational techniques involved in the project. Weeks 1-2 of the program will be devoted to tutorials/workshops/courses given by faculty mentors/graduate students to provide the participants with the necessary technical tools including some short courses, open scholarship,  computer skills, and background introduction to begin the projects. By the end of Week 2, students will have decided on a research project with the assistance of their assigned faculty mentor during the admission and present the initial problems they work with on Week 3 and midterm progress on Week 6 or 7. During Week 9, students will begin writing their conclusions and preparing a poster presentation. In Week 10, students will finalize their reports and poster presentations. SURE Poster Day will be held on the last morning, where each student or group of students describes their problem and explains their main findings to other students and faculty viewing their poster.
 
-\noindent\emph{Follow-up (from Fall to Spring):} During the following academic year, SURE participants will be connected to faculty mentors and graduate students through regularly scheduled Skype/Zoom meetings and emails as they continue to finalize their manuscripts for publication. The papers will be submitted to conference proceedings and academic journals for publication. In addition, SURE will financially support the participants to present their work at professional conferences and workshops, especially venues that host undergraduate research sessions, such as Mathematical Association of America (MAA) MathFest, Joint Mathematics Meetings (JMM), and Society for Industrial and Applied Mathematics (SIAM) annual meeting. Students will be advised to take classes that reinforce or supplement the topics covered during the summer program and to potentially take courses such as an independent study or senior thesis to obtain research credit for their project. Students will be coached to apply for graduate study.
-
-\subsection{Organizations' Commitments to the REU site}
-The program will be strongly supported by the Department of Applied Mathematics and College of Computing at Illinois Tech. The department has committed to providing SURE participants with office space, discussion and tutorial classrooms, and access to computer equipment, printers, and the internet at no charge for the on-site program. The college has committed to providing the locations for the presentations and poster day. Two graduate students will help with the tutorial/lab sessions each year for the duration of the program. The Office of Community Affairs and Outreach Programs at Illinois Tech will leverage relationships with City Colleges Of Chicago to
-advertise SURE to students in those institutions.
-We also have external collaborators will help us recruit students and promote SURE at their institution: Chicago State University (CSU), Northeastern Illinois University (NEIU), and Wheaton College.
-The Office of Enrollment will fully support the process of the application, admission, registration, and on-campus housing. 
-The Office of Research Integrity and Compliance will provide a presentation on \emph{Responsible Conduct of Research} to all SURE program participants. The Office of Title IX Compliance will help all SURE students, faculty mentors, and graduate students understand how to prevent sexual harassment and how respond if it occurs.
+\noindent\emph{Follow-up (from Fall to Spring):} During the following academic year, SURE participants will be connected to faculty mentors and graduate students through regularly scheduled Skype/Zoom meetings and emails as they continue to finalize their manuscripts for publication. The papers will be submitted to conference proceedings and academic journals for publication. In addition, SURE will financially support the participants to present their work at professional conferences and workshops, especially venues that host undergraduate research sessions, such as \hypertarget{MAAlink}{Mathematical Association of America} (\MAA) MathFest, \hypertarget{JMMlink}{Joint Mathematics Meetings} (\JMM), and \hypertarget{SIAMlink}{Society for Industrial and Applied Mathematics} (\SIAM) annual meeting. Students will be advised to take classes that reinforce or supplement the topics covered during the summer program and to potentially take courses such as an independent study or senior thesis to obtain research credit for their project. Students will be coached to apply for graduate study.
 
 
-\section{Nature of Student Activities: Logistics}
+
+\section{Nature of Student Activities}
 \subsection{SURE Program Schedule}
 \label{sec:SURESchedule}
 Each SURE student will be
@@ -570,7 +567,8 @@ On-Site social activities will be organized to provide recreation
 and build team-cooperation relationships for all involved participants: (1) Orientation luncheon; (2) Weekly SURE group Math Tea time; (3) Field trips; (4) BBQ
 cookout; (4) Baseball games;  (5) SURE Poster Day reception.
 
-\section{Nature of student Activities: Sample Projects }
+\subsection{ Sample Projects }
+\YDNote{Please specify prerequisites of the projects}
 SURE students will participate in research projects under the supervision of faculty mentors. Faculty
 mentors have designed projects with several possible levels of completion to ensure that SURE participants
 make independent research contributions, gain valuable research experience, and enjoy a feeling of
@@ -581,9 +579,11 @@ accomplishment after achieving their research objectives. Five sample research p
 
 \input{sc_projects.tex}
 
+\input{Shuwang_project.tex}
+
 \input{fh_projects.tex}
 
-\input{Shuwang_project.tex}
+
 
 \input{yd_projects2.tex}
 
@@ -592,12 +592,38 @@ accomplishment after achieving their research objectives. Five sample research p
 
 \section{The Research Environment}
 
+
+\subsection{The Host Institute}
+Illinois Tech is a private research university with an enrollment of 6,342. It has a significant minority student enrollment (around 19\% American Indian or Alaskan Native, Black or African American, Hispanic/Latino of any race, Native Hawaiian or Pacific Islander, and two or more races) and 37\% of the students are female. The College of Computing
+and the Department of Applied Mathematics at Illinois Tech offer a series of programs to involve students
+in research. The department offers Master of Science Degrees
+in both Applied Mathematics and Statistics, a Doctor of Philosophy Degree in Applied Mathematics.  Illinois Tech is a diverse and welcoming community, featuring a campus with students from 89 countries and all 50 states. In 1890 the university was founded in order to lift up people of all backgrounds with an education that would help them meet the needs of the age. Ensuring every student at Illinois Tech being afforded that opportunity is of the utmost importance.
+We strive to have a diverse culture of unity, inclusivity, equity, and respect.
+
+
+Illinois Institute of Technology is a private research university with around 19\% minority students. Since its founding in 1890, Illinois Tech has been inspiring student researchers to see beyond the visible, push the boundaries of what is possible, and stretch the powers of the imagination. The College of Computing and the Department of Applied Mathematics at Illinois Tech offer a series of programs for undergraduate research. Starting in January 2021, SoReMo Initiative offers semester-long research fellowships that provide unique interdisciplinary research opportunities for students who want to apply computational, modeling, and design skills to solve a social issue. That gives students another thing to look forward to in their undergraduate education and a more meaningful connection of their studies to their daily lives. A summer undergraduate research experience program (SURE) started in 2021. SURE offers insight and learning into some of the hottest topics in data science and computational mathematics through hands-on research experiences. Learn to work as a team member by interacting with graduate students and faculty, and gain an understanding of what it takes to conduct real-world research. Each SURE student receives a stipend of \$500 per week. In 2021, a seven-week SURE program supported seven students. This year SURE supported four students for eight weeks. 
+
+
+\subsection{Organizations' Commitments to the REU site}
+The program will be strongly supported by the Department of Applied Mathematics and the College of Computing at Illinois Tech. The department has committed to providing SURE participants with office space, discussion and tutorial classrooms, and access to computer equipment, printers, and the internet at no charge for the on-site program. The college has committed to providing the locations for the presentations and poster day. Two graduate students will help with the tutorial/lab sessions each year for the duration of the program. The Office of Community Affairs and Outreach Programs at Illinois Tech will leverage relationships with City Colleges Of Chicago to
+advertise SURE to students in those institutions.
+We also have external collaborators will help us recruit students and promote SURE at their institution: Chicago State University (CSU), Northeastern Illinois University (NEIU), and Wheaton College.
+The Office of Enrollment will fully support the process of the application, admission, registration, and on-campus housing. 
+The Office of Research Integrity and Compliance will provide a presentation on \emph{Responsible Conduct of Research} to all SURE program participants. The Office of Title IX Compliance will help all SURE students, faculty mentors, and graduate students understand how to prevent sexual harassment and how respond if it occurs.
+
+\subsection{A Pilot  Program in 2021 Summer}
+
+A \emph{seven-week}, internally funded pilot program was hosted remotely in the summer of 2021, which involved \emph{six faculty mentors and seven undergraduate students}. This program was a collaboration between the departments of applied mathematics and computer science. Each student received a \$500 weekly stipend. \YD, the pilot program coordinator, handled the selection of students and mentors, coordination of hybrid gatherings, social activities, and final presentations. \FH, \LK, and \SL served as mentors. \emph{Two of the undergraduates were racial minorities, four were female, one was a sexual minority, and three were first-generation college students.} All students provided very positive feedback about the program.
+The detailed program information and comments from the participants can be found in \cite{SUREWeb}.
+
 \subsection{Faculty Mentors}
 This program involves five faculty
 mentors in the Department of Applied Mathematics at
 Illinois Tech. Three are women faculty mentors (\YD, \SCTC, and \LK). All faculty mentors are
 active in their fields and have extensive experience in mentoring undergraduate students, ensuring the quality of mentoring activities and the success of the program. 
 Faculty mentors will maintain contact and communication with their advising students through Zoom/Skype. The participants also have chances to do long-term research with the guidance of their mentors.
+
+
 
 \noindent \underline{\textit{PI Yuhan Ding}}  has a track record in the field of computational and applied
 mathematics and has published several articles related to adaptive algorithms in function approximations and implemented the adaptive algorithms in a toolbox GAIL~\cite{
@@ -609,9 +635,9 @@ ChoEtal21a} built on MATLAB. She provided some tutorials to undergraduate studen
 
 \noindent \underline{\textit{Lulu Kang}} has mentored six applied math and computer science undergraduate students on various topics in statistics and machine learning since 2018. Most of them were female and/or minority students. In the past decade, she has advised eight M.S. students and two PhD students on their theses on various topics in statistics and related areas. \LK has also been active in community outreach by advising three high school students on applied statistics and machine learning projects. 
 \LK has worked on various areas in Statistics and Machine Learning, including uncertainty quantification, statistical design and analysis of experiments, Bayesian inference, etc. 
-\LK has developed and taught many statistical courses including Statistical Learning, Bayesian Computational Statistics, and Regression and Forecasting, etc. She is also the co-founder and Associate Program Director of the Data Science Program at Illinois Tech. \LK is currently the associate editor for journals \emph{SIAM/ASA Journal on Uncertainty Quantification} and \emph{Technometrics}.
+\LK has developed and taught many statistical courses including Statistical Learning, Bayesian Computational Statistics, and Regression and Forecasting, etc. She is also the co-founder and Associate Program Director of the Data Science Program at Illinois Tech. \LK is currently the associate editor for journals \emph{\SIAM/American Statistical Association (ASA) Journal on Uncertainty Quantification} and \emph{Technometrics}.
 
-\noindent \underline{\textit{Shuwang Li}} has supervised eight PhD students and five master's students with thesis option. \SL also mentored six undergraduates including students from other universities (doing research with \SL during summer). The two female undergraduate students went to graduate schools at Columbia and Ohio State,  and one of them published a joint paper with \SL at {\it SIAM Undergraduate Research Online} (SIURO). 
+\noindent \underline{\textit{Shuwang Li}} has supervised eight PhD students and five master's students with thesis option. \SL also mentored six undergraduates including students from other universities (doing research with \SL during summer). The two female undergraduate students went to graduate schools at Columbia and Ohio State,  and one of them published a joint paper with \SL at {\it \SIAM Undergraduate Research Online} (SIURO). 
 \SL is an expert in the theoretical analyses and
 long-time adaptive simulations of free boundary problems in  fluids and
 materials. \SL developed a novel time-space
@@ -621,13 +647,6 @@ phenomena: self-similar universal patterns in growing crystals and Hele-Shaw  fl
 
  
  
-\subsection{The Host Institute}
-Illinois Tech is a private research university with an enrollment of 6,342. It has a significant minority student enrollment (around 19\% American Indian or Alaskan Native, Black or African American, Hispanic/Latino of any race, Native Hawaiian or Pacific Islander, and two or more races) and 37\% of the students are female. The College of Computing
-and the Department of Applied Mathematics at Illinois Tech offer a series of programs to involve students
-in research. The department offers Master of Science Degrees
-in both Applied Mathematics and Statistics, a Doctor of Philosophy Degree in Applied Mathematics.  Illinois Tech is a diverse and welcoming community, featuring a campus with students from 89 countries and all 50 states. In 1890 the university was founded in order to lift up people of all backgrounds with an education that would help them meet the needs of the age. Ensuring every student at Illinois Tech being afforded that opportunity is of the utmost importance.
-We strive to have a diverse culture of unity, inclusivity, equity, and respect.
-
 \subsection{Housing and Campus Life} For the campus-based portion of SURE, students
 will reside in Illinois Tech McCormick Student Village or State Street Village. The furnished halls are suite-style offering students the
 convenience to interact with one another outside of the program. The halls provide WiFi, laundry
@@ -641,21 +660,21 @@ efforts will be made to
 (1) 
 The URL of the program’s
 website \cite{SUREWeb} will be posted in the list of NSF-funded REU Sites. 
-(2) The flyer will be posted on publications associated with ACM/IEEE chapters, Focus of MAA, AWM
-Newsletter, NAM Newsletter, and Math Horizons and also in the Illinois Tech campus newspaper, bulletin, and electronic boards.
+(2) The flyer will be posted on publications associated with ACM/IEEE chapters, Focus of \MAA, \hypertarget{AWMlink}{Association of Women in Mathematics} (\AWM)
+Newsletter, \hypertarget{NAMlink}{ National Association of Mathematicians} (\NAM) Newsletter, and Math Horizons and also in the Illinois Tech campus newspaper, bulletin, and electronic boards.
 (3) 
 The PIs will attach the flyer to emails sent to
 chairs and undergraduate mentors in Applied Mathematics and Statistics at institutions in the US, especially
 \MSIs and research-limited institutions, with a request to distribute the flyer to their undergraduates. 
 (4) Faculty mentors will attend (in person or remotely)
-the annual JMM, MathFest, NAM, and other professional conferences to advertise the
+the annual \JMM, MathFest, \NAM, and other professional conferences to advertise the
 program and distribute the flyer. In addition, faculty mentors will contact their colleagues and alumni with a request to
 distribute the flyer to their undergraduate classes.
 
 Extra effort will be made to 
 \emph{make the program visible to underrepresented groups}.
-Faculty mentors will attend (or participate remotely) the annual meeting of the Society for the Advancement of Chicanos/Hispanic and Native Americans in Science  (SACNAS) and Association of Women in Mathematics (AWM)
-to advertise the program.
+Faculty mentors will attend (or participate remotely) the annual meeting of the Society for the Advancement of Chicanos/Hispanic and Native Americans in Science  (SACNAS) and 
+\AWM to advertise the program.
 Faculty mentors will visit 
 \MSIs near Illinois Tech to advertise the program.
  Faculty from underrepresented groups in the College of Computing will contact colleagues at \MSIs to advertise our
@@ -708,11 +727,10 @@ We will invite Virginia D.\ Foster, Title IX Compliance Coordinator to present T
 (4) expectations of behavior on campus. Afterward, Virginia will provide several scenarios and lead a group discussion to help students understand Title IX better. We are committed to creating an environment for all participants that is fair, humane, and respectful.
 
 \section{Project Evaluation and Reporting}
-The proposed external evaluation will be led by \hypertarget{SAlink}{Dr.~Shlomo Argamon} (\SA) (see supplementary document for
-SA’s expertise). He has  been a PI on multiple
-NSF grants. He will work directly with the SURE team on the implementation of the evaluation
-plan.  \SA will author the annual evaluation report including results and improvement recommendations. The SURE team will respond to these reports in written form, documenting
-the impact on the program. The conceptual model of the evaluation is shown in Figure \ref{fig:my_label}. \SA will also implement an audit of the implementation process
+The proposed external evaluation will be led by \hypertarget{GPlink}{Dr.~Gorjana Popovic} (\GP) (see supplementary document for
+GP’s expertise). She has a lot experience in Mathematics education. She will work directly with the SURE team on the implementation of the evaluation
+plan.  \GP will author the annual evaluation report including results and improvement recommendations. The SURE team will respond to these reports in written form, documenting
+the impact on the program. The conceptual model of the evaluation is shown in Figure \ref{fig:my_label}. \GP will also implement an audit of the implementation process
 to ensure the program is implemented with integrity. Both quantitative and qualitative analyses are
 planned as follows.
 
@@ -725,7 +743,7 @@ planned as follows.
 
 \subsection{Evaluation of Short Term Outcomes}
 
-We will use survey form, feedback, and document review to evaluate the short term outcomes. The questions in the survey that comprise these instruments will be developed under the leadership of the \SA and faculty mentors to address the objectives.
+We will use survey form, feedback, and document review to evaluate the short term outcomes. The questions in the survey that comprise these instruments will be developed under the leadership of the \GP and faculty mentors to address the objectives.
 \subsubsection{Produce Skillful Researchers} \label{sec:hardskill}
 The research capability will be measured quantitatively in four parts: learning new algorithms, identifying the problem, formulating the problem, and identifying the approaches.
 Students will be asked to assess themselves in these four parts within a range 0 to 10 before and after the program. Faculty mentors will use the same survey to evaluate the students’ research capability after the first two-week program and re-assess the students’ capability after the program based on their performance in the project.
@@ -738,7 +756,7 @@ We will track the demographic information of the applicants and participants. We
 \subsubsection{
 Inspire Students' Research Interests to Explore Real-world Problems}
 
-A survey regarding the program's influence will be collected from SURE participants at the end of the program. The participants will be asked about the gain from the program, any change of their future education and career plans after the program, and suggestion to the program. \SA will compare the acquired information with the motivation and career plans in the application materials. The result will provide the short-term influence of SURE program on their career path.
+A survey regarding the program's influence will be collected from SURE participants at the end of the program. The participants will be asked about the gain from the program, any change of their future education and career plans after the program, and suggestion to the program. \GP will compare the acquired information with the motivation and career plans in the application materials. The result will provide the short-term influence of SURE program on their career path.
 
 \subsubsection{Teach Effective Communicators and Team Players}
 
@@ -753,12 +771,12 @@ asked to complete follow-up surveys via email or communication with their mentor
 
 \subsection{Evaluation of Implementation of the Program}
  All application materials and selection rubric will be shared
-with \SA after the students are selected. \SA will review
+with \GP after the students are selected. \GP will review
 these materials and  compare the selected students to the established
-rubric and verify that the rubric criterion has been followed. For comparison purposes, \SA will also
+rubric and verify that the rubric criterion has been followed. For comparison purposes, \GP will also
 review the applicants who were not selected. Identified deviations will be immediately drawn to the
 attention of the selection committee. The most effective recruitment methods will be expanded in the
-years that follow while the less effective methods will be redesigned or removed. Schedules, participation logs, possible research projects and peer-reviewed papers will be maintained and provided to \SA. These documents will be reviewed to determine whether the program was implemented in the manner
+years that follow while the less effective methods will be redesigned or removed. Schedules, participation logs, possible research projects and peer-reviewed papers will be maintained and provided to \GP. These documents will be reviewed to determine whether the program was implemented in the manner
 as it was proposed.
  
 \section{Intellectual Merit}
@@ -786,7 +804,7 @@ SURE is committed to promoting research in computational mathematics and statist
 \Upara{Improving Illinois Tech}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 The Department of Applied Mathematics at Illinois Tech is committed to build a strong applied mathematics program with computational mathematics and data science as a major research area. 
-SURE will generate more momentum and stimuli for our teaching and research in this area. We will attract more underrepresented undergraduate students to this research area. Through the SURE and the teaching and research materials/outcomes, we can add new components on computational mathematics and data science to the existing courses Math 478 Computational Mathematics, Math 569 Statistical Learning, Math 565 Monte Carlo Methods, and others. 
+SURE will generate more momentum and stimuli for our teaching and research in this area. We will attract more underrepresented undergraduate students to this research area. Through the SURE and the teaching and research materials/outcomes, we can add new components on computational mathematics and data science to the existing courses Math 478 Computational Mathematics, Math 569 Statistical Learning, Math 565 Monte Carlo Methods in Finance, and others.
 We expect that students will establish a lasting interest in research in the interdisciplinary areas of mathematics and data science.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -801,20 +819,19 @@ We believe the proposed SURE program will fill a gap in training the research ca
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \Upara{Disseminating Research and Poster Presentation at Conferences}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The research in SURE will result in publications in peer-reviewed journals in applied mathematics, computer science, statistics, and machine learning. These journals will include both those that emphasize theory and those that emphasize applications. Illinois Tech  SURE students will join some national conferences such as MAA MathFest, JMM, and SIAM annual meeting, etc, to present the results of their work.
+The research in SURE will result in publications in peer-reviewed journals in applied mathematics, computer science, statistics, and machine learning. These journals will include both those that emphasize theory and those that emphasize applications. Illinois Tech  SURE students will join some national conferences such as \MAA MathFest, \JMM, and \SIAM annual meeting, etc, to present the results of their work.
 
 
 \section{Results from Prior NSF Support} \label{sec:prior_work}
-
+\YDNote{It seems no need to have this}
 \subsection{Yuhan Ding Has No Prior NSF Support}
 
 \subsection{NSF-DMS-1522687, \emph{Stable, Efficient, Adaptive Algorithms for
 			Approximation and Integration},
 		\$270,000, August 2015 -- July 2018} \label{sec:PreviousFred}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Fred Hickernell (\FH, PI) and Gregory E. Fasshauer (\GEF, co-PI) led this project, and \SCTC contributed as senior personnel
-Gregory E.  Other contributors were \FH's research students {\YD} ( PhD 2015), \LJ (PhD 2016),
-\LlAJR (PhD 2016), \hypertarget{DLlink}{Da Li} (\DL, MS 2016), \hypertarget{JLlink}{Jiazhen Liu} (\JL, MS 2018), JR (PhD 2019), \hypertarget{XTlink}{Xin Tong} (\XT, MS 2014, PhD 2020 at the University of Illinois at Chicago), \hypertarget{KZlink}{Kan Zhang} (\KZ, PhD student), \hypertarget{YZlink}{Yizhi Zhang} (\YZ, PhD 2018), and \hypertarget{XZlink}{Xuan Zhou} (\XZ, PhD 2015).  Articles, theses,
+Fred Hickernell (\FH, PI) and Gregory E. Fasshauer (\GEF, co-PI) led this project, and Sou-Cheng Choi (\SCTC) contributed as senior personnel.  Other contributors were \FH's research students {\YD} ( PhD 2015), \hypertarget{LJlink}{ Lan Jiang } (\LJ, PhD 2016),
+\hypertarget{LlAJRlink}{Llu\'is Antoni Jim\'enez Rugama} (\LlAJR, PhD 2016), \hypertarget{DLlink}{Da Li} (\DL, MS 2016), \hypertarget{JLlink}{Jiazhen Liu} (\JL, MS 2018), JR (PhD 2019), \hypertarget{XTlink}{Xin Tong} (\XT, MS 2014, PhD 2020 at the University of Illinois at Chicago), \hypertarget{KZlink}{Kan Zhang} (\KZ, PhD student), \hypertarget{YZlink}{Yizhi Zhang} (\YZ, PhD 2018), and \hypertarget{XZlink}{Xuan Zhou} (\XZ, PhD 2015).  Articles, theses,
 software, and preprints supported in
 part by this
 grant
@@ -918,14 +935,14 @@ research students;  female students include \YD, \LJ, \JL, \XT, and Xiaoyang Zha
 \Upara{Recruitment and Application Materials} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 All recruitment and application materials will be shared
-with \SA before and after implementation, including the applicant selection rubric. \SA will review
+with \GP before and after implementation, including the applicant selection rubric. \GP will review
 the application materials and the selection rubric, and provide formative feedback to faculty mentors
 before the materials are distributed and before students are selected. After the students are selected
-but before they are formally accepted, \SA will compare the selected students to the established
-rubric and verify that the rubric criterion has been followed. For comparison purposes, \SA will also
+but before they are formally accepted, \GP will compare the selected students to the established
+rubric and verify that the rubric criterion has been followed. For comparison purposes, \GP will also
 review the applicants who were not selected. Identified deviations will be immediately drawn to the
 attention of the selection committee. The most effective recruitment methods will be expanded in the
-years that follow while the less effective methods will be redesigned or removed. \SA will review the
+years that follow while the less effective methods will be redesigned or removed. \GP will review the
 recruitment process and results of the process for summative purposes. Baseline data will be collected
 concerning students’ prior mathematics and statistics courses, computer skills, and research experiences.
 
@@ -946,10 +963,10 @@ to gauge the degree to which the program has been a lasting influence on SURE st
 \Upara{Document Review} 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 Application materials,  schedules,  possible research projects, and peer-reviewed papers will be maintained and provided
-to \SA. These documents will be reviewed to determine whether the program was implemented
+to \GP. These documents will be reviewed to determine whether the program was implemented
 in the manner that it was proposed. Information acquired will be used to improve this
 program. The papers co-authored by SURE participants will be used for summative evaluation, including
 their development in knowledge and research skills. Application materials will also be examined to
 determine whether SURE participants who successfully published peer-reviewed papers had entered this
 program with different background knowledge or experiences than those that did not.
-In addition, we will track the percentage of our targeted group of applicants and participants. If in some groups, the percentage is quite low, we will spend more effort on advising our program in that group. The annual report will also address whether we reach the targeted percentage or not. If not, \SA will suggest several ways to be conducted in the next year.
+In addition, we will track the percentage of our targeted group of applicants and participants. If in some groups, the percentage is quite low, we will spend more effort on advising our program in that group. The annual report will also address whether we reach the targeted percentage or not. If not, \GP will suggest several ways to be conducted in the next year.
